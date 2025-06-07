@@ -13,48 +13,48 @@
     "property": "zenzero.tab_groups_enabled",
     "label": "📂 Enable tab groups styling",
     "type": "checkbox",
-    "defaultValue": true
+    "defaultValue": false
   },
   {
     "property": "zenzero.tab_switcher_enabled",
     "label": "🔄 Enable tab switcher styling",
     "type": "checkbox",
-    "defaultValue": true
+    "defaultValue": false
   },
   {
     "property": "zenzero.player_enabled",
     "label": "▶️ Enable player styling",
     "type": "checkbox",
-    "defaultValue": true
+    "defaultValue": false
   },
   {
     "property": "zenzero.containers_enabled",
     "label": "📦 Enable containers styling",
     "type": "checkbox",
-    "defaultValue": true
+    "defaultValue": false
   },
   {
     "property": "zenzero.compact_sidebar_enabled",
     "label": "📏 Enable compact sidebar",
     "type": "checkbox",
-    "defaultValue": true
+    "defaultValue": false
   },
   {
     "property": "zenzero.custom_addon_icons_enabled",
     "label": "🎨 Enable custom addon icons",
     "type": "checkbox",
-    "defaultValue": true
+    "defaultValue": false
   },
   {
     "property": "zenzero.glance_enabled",
     "label": "👁️ Enable glance styling",
     "type": "checkbox",
-    "defaultValue": true
+    "defaultValue": false
   },
   {
     "property": "zenzero.general_enabled",
     "label": "⚙️ Enable general styling",
     "type": "checkbox",
-    "defaultValue": true
+    "defaultValue": false
   }
 ]
