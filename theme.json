@@ -8,11 +8,11 @@
   "createdAt": "2025-06-08",
   "updatedAt": "2025-06-08",
   "style": {
-    "chrome": "https://raw.githubusercontent.com/sameerasw/ZenZero/Sine/chrome.css",
-    "content": "https://raw.githubusercontent.com/sameerasw/ZenZero/Sine/userContent.css"
+    "chrome": "https://raw.githubusercontent.com/sameerasw/ZenZero/main/chrome.css",
+    "content": "https://raw.githubusercontent.com/sameerasw/ZenZero/main/userContent.css"
   },
-  "preferences": "https://raw.githubusercontent.com/sameerasw/ZenZero/Sine/preferences.json",
-  "readme": "https://raw.githubusercontent.com/sameerasw/ZenZero/Sine/README.md",
+  "preferences": "https://raw.githubusercontent.com/sameerasw/ZenZero/main/preferences.json",
+  "readme": "https://raw.githubusercontent.com/sameerasw/ZenZero/main/README.md",
   "image": "tbd.png",
   "tags": [
     "content",
