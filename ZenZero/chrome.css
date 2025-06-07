@@ -1,33 +1,33 @@
 @media (-moz-pref("zenzero.tab_groups_enabled")) {
-  @import "ZenZero/modules/zz-tab-groups.css";
+  @import "modules/zz-tab-groups.css";
 }
 
 @media (-moz-pref("zenzero.tab_switcher_enabled")) {
-  @import "ZenZero/modules/zz-tab-switcher.css";
+  @import "modules/zz-tab-switcher.css";
 }
 
 @media (-moz-pref("zenzero.player_enabled")) {
-  @import "ZenZero/modules/zz-player.css";
+  @import "modules/zz-player.css";
 }
 
 @media (-moz-pref("zenzero.containers_enabled")) {
-  @import "ZenZero/modules/zz-containers.css";
+  @import "modules/zz-containers.css";
 }
 
 @media (-moz-pref("zenzero.compact_sidebar_enabled")) {
-  @import "ZenZero/modules/zz-compact-sidebar.css";
+  @import "modules/zz-compact-sidebar.css";
 }
 
 @media (-moz-pref("zenzero.custom_addon_icons_enabled")) {
-  @import "ZenZero/modules/zz-custom-addon-icons.css";
+  @import "modules/zz-custom-addon-icons.css";
 }
 
 @media (-moz-pref("zenzero.glance_enabled")) {
-  @import "ZenZero/modules/zz-glance.css";
+  @import "modules/zz-glance.css";
 }
 
 @media (-moz-pref("zenzero.general_enabled")) {
-  @import "ZenZero/modules/zz-general.css";
+  @import "modules/zz-general.css";
 }
 
 /* other mods */
