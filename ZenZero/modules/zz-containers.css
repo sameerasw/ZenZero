@@ -1,0 +1,44 @@
+
+/* ======== containers ======= */
+tab {
+  .tab-background {
+    flex-direction: unset !important;
+
+    .tab-context-line {
+      display: flex !important;
+      box-sizing: border-box !important;
+
+      width: 22px !important;
+      height: 22px !important;
+      margin: auto 6px !important;
+      border-radius: 0.7rem !important;
+      /*   background-color: color-mix(in srgb, var(--identity-tab-color) 20%, white), !important; */
+      background: color-mix(
+        in srgb,
+        var(--identity-tab-color) 30%,
+        transparent
+      ) !important;
+
+      border: 1.5px var(--identity-tab-color) solid !important;
+      transition: all 0.3s ease-in-out !important;
+    }
+  }
+  &:hover .tab-context-line {
+    filter: blur(10px) !important;
+    border: 12px var(--identity-tab-color) solid !important;
+  }
+}
+
+[uidensity="compact"] tab .tab-background .tab-context-line {
+  margin: auto 5px !important;
+}
+
+tab[zen-essential="true"] .tab-background .tab-context-line {
+  margin: auto !important;
+  z-index: 1000 !important;
+}
+
+tab[discarded=""]:hover,
+tab[pending="true"]:hover {
+  filter: grayscale(0) !important;
+}

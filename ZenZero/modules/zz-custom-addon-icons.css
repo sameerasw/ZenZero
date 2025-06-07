@@ -1,0 +1,33 @@
+
+/* Custom extension icons */
+/* Stylebot */
+[label="Stylebot"] image {
+  list-style-image: url("https://cdn3.iconfinder.com/data/icons/feather-5/24/command-128.png") !important;
+}
+
+/* Dark Reader */
+[label="Dark Reader"] image {
+  list-style-image: url("https://cdn3.iconfinder.com/data/icons/feather-5/24/moon-512.png") !important;
+}
+
+/* Zen Internet */
+[label="Zen Internet"] image {
+  /*   list-style-image: url("https://cdn3.iconfinder.com/data/icons/feather-5/24/command-128.png") !important; */
+}
+
+/* Proton Pass */
+[label="Proton Pass: Free Password Manager"] image {
+  list-style-image: url("https://cdn3.iconfinder.com/data/icons/feather-5/24/key-128.png") !important;
+}
+
+/* Dark theme invert for extension icons */
+[devtoolstheme="dark"] {
+  [label="Dark Reader"],
+  [label="Stylebot"],
+  /*   [label="Zen Internet"], */
+  [label="Proton Pass: Free Password Manager"] {
+    image {
+      filter: invert(1);
+    }
+  }
+}
