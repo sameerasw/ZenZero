@@ -8,8 +8,7 @@
   "createdAt": "2025-06-08",
   "updatedAt": "2025-06-08",
   "style": {
-    "chrome": "https://raw.githubusercontent.com/sameerasw/ZenZero/main/ZenZero/chrome.css",
-    "content": "https://raw.githubusercontent.com/sameerasw/ZenZero/main/userContent.css"
+    "chrome": "https://raw.githubusercontent.com/sameerasw/ZenZero/main/ZenZero/chrome.css"
   },
   "preferences": "https://raw.githubusercontent.com/sameerasw/ZenZero/main/ZenZero/preferences.json",
   "readme": "https://raw.githubusercontent.com/sameerasw/ZenZero/main/README.md",
