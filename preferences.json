@@ -1,12 +1,60 @@
 [
-    {
-        "type": "text",
-        "label": "**ZenZero Settings**",
-        "margin": "10px 0 15px 0",
-        "size": "20px"
-    },
-    {
-        "type": "separator",
-        "label": "Nothing yet, but coming soon!"
-    }
+  {
+    "type": "text",
+    "label": "**ZenZero Settings**",
+    "margin": "10px 0 15px 0",
+    "size": "20px"
+  },
+  {
+    "type": "separator",
+    "label": "Nothing yet, but coming soon!"
+  },
+  {
+    "property": "zenzero.tab_groups_enabled",
+    "label": "📂 Enable tab groups styling",
+    "type": "checkbox",
+    "defaultValue": true
+  },
+  {
+    "property": "zenzero.tab_switcher_enabled",
+    "label": "🔄 Enable tab switcher styling",
+    "type": "checkbox",
+    "defaultValue": true
+  },
+  {
+    "property": "zenzero.player_enabled",
+    "label": "▶️ Enable player styling",
+    "type": "checkbox",
+    "defaultValue": true
+  },
+  {
+    "property": "zenzero.containers_enabled",
+    "label": "📦 Enable containers styling",
+    "type": "checkbox",
+    "defaultValue": true
+  },
+  {
+    "property": "zenzero.compact_sidebar_enabled",
+    "label": "📏 Enable compact sidebar",
+    "type": "checkbox",
+    "defaultValue": true
+  },
+  {
+    "property": "zenzero.custom_addon_icons_enabled",
+    "label": "🎨 Enable custom addon icons",
+    "type": "checkbox",
+    "defaultValue": true
+  },
+  {
+    "property": "zenzero.glance_enabled",
+    "label": "👁️ Enable glance styling",
+    "type": "checkbox",
+    "defaultValue": true
+  },
+  {
+    "property": "zenzero.general_enabled",
+    "label": "⚙️ Enable general styling",
+    "type": "checkbox",
+    "defaultValue": true
+  }
 ]
