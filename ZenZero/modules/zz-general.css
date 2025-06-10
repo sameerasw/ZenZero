@@ -357,3 +357,7 @@ menuitem {
     }
   }
 }
+
+#zen-browser-background{
+  display: none !important;
+}

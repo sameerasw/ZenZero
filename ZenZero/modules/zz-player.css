@@ -152,3 +152,16 @@
     }
   }
 } */
+
+/* squiggly line */
+/* #zen-media-progress-bar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: url("data:image/svg+xml;utf8,<svg viewBox='0 0 100 10' xmlns='http://www.w3.org/2000/svg'><path d='M0,5 Q2.5,0 5,5 T10,5 T15,5 T20,5 T25,5 T30,5 T35,5 T40,5 T45,5 T50,5 T55,5 T60,5 T65,5 T70,5 T75,5 T80,5 T85,5 T90,5 T95,5 T100,5' stroke='red' fill='transparent' stroke-width='2'/></svg>") repeat-x;
+  background-size: 100px 10px;
+  pointer-events: none;
+} */
