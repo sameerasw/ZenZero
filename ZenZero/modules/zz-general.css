@@ -3,11 +3,6 @@
  * GENERAL UI ELEMENTS STYLING
  ******************************************************************************/
 
-/* Hide workspace indicator */
-#zen-current-workspace-indicator {
-  display: none;
-}
-
 /* Separator width reduction */
 #vertical-pinned-tabs-container-separator,
 #tabbrowser-arrowscrollbox-periphery:before,
@@ -19,11 +14,6 @@
 /* URL bar cleanup - hide unnecessary elements */
 #page-action-buttons,
 #identity-permission-box {
-  display: none !important;
-}
-
-/* No workspace indicator */
-#zen-current-workspace-indicator-container {
   display: none !important;
 }
 
@@ -358,6 +348,18 @@ menuitem {
   }
 }
 
+
+/* transparent private browsing */
 #zen-browser-background{
   display: none !important;
 }
+
+/* zenOS26 */
+/* #navigator-toolbox{
+  margin: 10px !important;
+  max-height: calc(100% - 20px) !important;
+  
+  #titlebar::before{
+  border-radius: 15px !important;
+  }
+} */
