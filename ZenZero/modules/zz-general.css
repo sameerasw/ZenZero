@@ -112,29 +112,10 @@ html:not([lwt-sidebar="dark"]) {
 }
 
 /* Sidebar background transparency */
-#sidebar-box,
-#bookmarksPanel.sidebar-panel,
-#sidebar-header,
-#history-panel,
-html,
-#header {
+/* #sidebar-box {
   background-color: transparent !important;
-  border: none !important;
   box-shadow: none !important;
-}
-
-/* Sidebar styling and border radius */
-/* body > browser:nth-child(2)[disableglobalhistory="true"], */
-#sidebar {
-  border-radius: 1em !important;
-  overflow: hidden !important;
-  margin: 0 14px 14px 0 !important;
-}
-
-/* Hide GenAI provider selector in sidebar */
-#header:has(select[data-l10n-id="genai-header-provider-menu"]) {
-  display: none !important;
-}
+} */
 
 /* Sidebar header animation */
 #sidebar-header {
@@ -160,8 +141,8 @@ html,
 
 /* Sidebar bottom button positioning */
 #zen-sidebar-bottom-buttons {
-  order: 1 !important;
-  margin-bottom: 0.5em !important;
+/*   order: 1 !important; */
+/*   margin-bottom: 0.5em !important; */
 }
 
 /* Hide workspace dots with hover reveal */

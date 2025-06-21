@@ -23,7 +23,7 @@ tab {
       transition: all 0.3s ease-in-out !important;
     }
   }
-  &:hover .tab-context-line {
+  &:hover .tab-context-line, & .tab-background[selected] .tab-context-line{
     filter: blur(10px) !important;
     border: 12px var(--identity-tab-color) solid !important;
   }
