@@ -1,11 +1,46 @@
 :root{
   --folder-corner-radius: 1em;
-/*   --folder-bg-color: light-dark(#fff7, #0007);
-  --folder-bg-color-inactive: light-dark(#fff2, #0002); */
   --folder-border-color: light-dark(#0005, #fff5);
   
   --folder-border-width: 2px;
 }
+
+
+/* bring back folder colors */
+
+:root {
+  /* 🔧 Adjust transparency (0–1) */
+  --folder-opacity: 0.3;
+
+  /* 🎨 Pastel palette with light/dark pairs */
+  --folder-color-1: light-dark(#a7f3d0, #134e4a); /* teal */
+  --folder-color-2: light-dark(#bae6fd, #083344); /* cyan */
+  --folder-color-3: light-dark(#fecdd3, #7f1d1d); /* red-pink */
+  --folder-color-4: light-dark(#e9d5ff, #4c1d95); /* purple */
+  --folder-color-5: light-dark(#bef264, #365314); /* lime */
+  --folder-color-6: light-dark(#fef9c3, #713f12); /* yellow */
+}
+
+/* Apply with global opacity */
+.zen-workspace-tabs-section > zen-folder:nth-child(1) {
+  background-color: rgb(from var(--folder-color-1) r g b / var(--folder-opacity));
+}
+.zen-workspace-tabs-section > zen-folder:nth-child(2) {
+  background-color: rgb(from var(--folder-color-2) r g b / var(--folder-opacity));
+}
+.zen-workspace-tabs-section > zen-folder:nth-child(3) {
+  background-color: rgb(from var(--folder-color-3) r g b / var(--folder-opacity));
+}
+.zen-workspace-tabs-section > zen-folder:nth-child(4) {
+  background-color: rgb(from var(--folder-color-4) r g b / var(--folder-opacity));
+}
+.zen-workspace-tabs-section > zen-folder:nth-child(5) {
+  background-color: rgb(from var(--folder-color-5) r g b / var(--folder-opacity));
+}
+.zen-workspace-tabs-section > zen-folder:nth-child(6) {
+  background-color: rgb(from var(--folder-color-6) r g b / var(--folder-opacity));
+}
+
 
 /* zen-folder zen-folder {
   --folder-corner-radius: calc(1em - 5px);
@@ -24,7 +59,13 @@ zen-folder zen-folder{
   padding: 0.2em !important;
 } */
 
+
+
 .zen-workspace-tabs-section > zen-folder{
+    border-radius: 1em !important;
+    margin-top: 3px !important;
+    margin-bottom: 3px !important;
+  transition: all 0.3s ease-in-out !important;
 
 .tab-group-container > .tabbrowser-tab:nth-last-child(1), .tab-group-container >  zen-folder:nth-last-child(1){
       border-bottom-left-radius: var(--folder-corner-radius) !important;
@@ -43,26 +84,15 @@ zen-folder > *{
     border-radius: 1em !important;
 }
 
-zen-folder{
-    border-radius: 1em !important;
-    margin-top: 3px !important;
-    margin-bottom: 3px !important;
-  transition: all 0.3s ease-in-out !important;
-}
 
 body:has(zen-folder:hover){
   zen-folder:hover{
-    background-color: light-dark(#fff3, #0003) !important;
-    box-shadow: #0003 0 0 10px 0 !important;
+/*     background-color: light-dark(#fff3, #0003) !important; */
+/*     box-shadow: #0003 0 0 10px 0 !important; */
+/*   outline: var(--folder-border-width) solid var(--folder-border-color) !important; */
+  --folder-opacity: 0.75;
   }
 }
-
-/* zen-folder {
-  .tab-group-container > .tabbrowser-tab,.tab-group-container >  zen-folder{
-    background-color: var(--folder-bg-color-inactive) !important;
-  }
-}
- */
 
 
 /* ---------------------- */
@@ -70,35 +100,20 @@ body:has(zen-folder:hover){
 
 /* ---------------------- */
 
-/* zen-folder:has(tab[selected]) {
-  .tab-group-container > .tabbrowser-tab
-  ,.tab-group-container >  zen-folder
-  {
-    background-color: var(--folder-bg-color) !important;
-  }
-} */
-
-zen-folder{
-  transition: background-color 0.3s ease-in-out !important;
-}
 
 zen-folder[collapsed] [bursting][folder-active]{
   border-radius:  var(--folder-corner-radius) !important
-}
-
-zen-folder[collapsed] zen-folder[hasactivetab]:not([bursting][folder-active]){
-  background-color: transparent !important;
 }
 
 
 .zen-workspace-tabs-section > zen-folder:has(tab[selected]) {
   outline: var(--folder-border-width) dashed var(--folder-border-color) !important;
   border-radius: var(--folder-corner-radius) !important;
+  --folder-opacity: 0.55;
 }
 
 
 zen-folder:has(tab[selected]) {
-    background-color: var(--folder-bg-color-inactive) !important;
   border-radius: var(--folder-corner-radius) !important;
 }
 
@@ -115,3 +130,7 @@ zen-folder {
     filter: grayscale(1);
     opacity: 0.5;
 }
+
+
+
+
