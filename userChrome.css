@@ -25,3 +25,25 @@
     opacity: 0 !important;
   }
 }
+
+
+.tab-group-label {
+  #tabbrowser-tabs[orient="vertical"] & {
+    height: 100% !important;
+    align-content: center !important;
+  }
+}
+
+/* #navigator-toolbox, #titlebar, #titlebar::before, #titlebar::after, #navigator-toolbox::after{
+  background-color: transparent !important;
+  background: none !important;
+  
+  --zen-main-browser-background-toolbar: transparent !important;
+} */
+
+.browserContainer.responsive-mode{
+  background-color: transparent !important;
+  browser{
+    border-radius: 2em !important;
+  }
+}

@@ -331,8 +331,8 @@ menuitem {
 
 
 /* transparent private browsing */
-#zen-browser-background{
-  display: none !important;
+html[data-title-private="Zen Browser — Private Browsing"] #zen-browser-background{
+/*   display: none !important; */
 }
 
 /* zenOS26 */

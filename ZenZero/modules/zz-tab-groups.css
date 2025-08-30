@@ -1,98 +1,117 @@
-
-/*******************************************************************************
- * TAB GROUPS STYLING
- ******************************************************************************/
-
-/* Tab group label styling */
-.tab-group-label,
-tab-group .tab-group-label {
-  width: 100% !important;
-  border: none !important;
-  border-radius: 1em !important;
-  outline: none !important;
-  margin-right: 0 !important;
-  text-align: left !important;
-  padding-left: 10px !important;
-  background: color-mix(
-    in srgb,
-    var(--tab-group-color) 20%,
-    transparent
-  ) !important;
-  color: color-mix(in srgb, var(--tab-group-color) 70%, #fff) !important;
-  scale: 1 !important;
-  transition: all 0.2s ease-in-out !important;
-}
-tab-group .tab-group-label:hover {
-  padding-left: 15px !important;
-  background: color-mix(
-    in srgb,
-    var(--tab-group-color) 50%,
-    transparent
-  ) !important;
-  color: color-mix(in srgb, var(--tab-group-color) 30%, #fff) !important;
-}
-tab-group .tab-group-label:active {
-  scale: 0.9 !important;
-}
-tab-group:not([collapsed]) .tab-group-label {
-  border: 1.5px dashed
-    color-mix(in srgb, var(--tab-group-color) 50%, transparent) !important;
+:root{
+  --folder-corner-radius: 1em;
+/*   --folder-bg-color: light-dark(#fff7, #0007);
+  --folder-bg-color-inactive: light-dark(#fff2, #0002); */
+  --folder-border-color: light-dark(#0005, #fff5);
+  
+  --folder-border-width: 2px;
 }
 
-/* Label container margins */
-.tab-group-label-container {
-  margin-top: 3px !important;
-  margin-left: 0 !important;
-  margin-bottom: 0 !important;
-}
-tab-group[collapsed] .tab-group-label-container {
-  margin-bottom: 3px !important;
+/* zen-folder zen-folder {
+  --folder-corner-radius: calc(1em - 5px);
 }
 
-/* Hide label container's after pseudo */
-.tab-group-label-container::after {
-  display: none !important;
+zen-folder zen-folder zen-folder {
+  --folder-corner-radius: calc(1em - 10px);
 }
 
-/* Tab stack styles */
-.tab-stack,
-tab-group .tab-stack {
+zen-folder zen-folder zen-folder zen-folder {
+  --folder-corner-radius: calc(1em - 15px);
+}
+
+
+zen-folder zen-folder{
+  padding: 0.2em !important;
+} */
+
+.zen-workspace-tabs-section > zen-folder{
+
+.tab-group-container > .tabbrowser-tab:nth-last-child(1), .tab-group-container >  zen-folder:nth-last-child(1){
+      border-bottom-left-radius: var(--folder-corner-radius) !important;
+      border-bottom-right-radius:  var(--folder-corner-radius) !important;
+    }
+  
+.tab-group-container > .tabbrowser-tab:nth-child(3), .tab-group-container >  zen-folder:nth-child(3){
+      border-top-left-radius:  var(--folder-corner-radius) !important;
+      border-top-right-radius:  var(--folder-corner-radius) !important;
+    }
+
+}
+
+zen-folder > *{
   transition: all 0.3s ease-in-out !important;
-  border-radius: 1.2em !important;
-  background: color-mix(
-    in srgb,
-    var(--tab-group-color) 20%,
-    transparent
-  ) !important;
-  margin-block: 2px !important;
-}
-.tab-stack:hover,
-tab-group .tab-stack:hover {
-  background: color-mix(
-    in srgb,
-    var(--tab-group-color) 50%,
-    transparent
-  ) !important;
+    border-radius: 1em !important;
 }
 
-/* Hide tab indicator */
-tab-group .tabbrowser-tab::before {
-  display: none !important;
+zen-folder{
+    border-radius: 1em !important;
+    margin-top: 3px !important;
+    margin-bottom: 3px !important;
+  transition: all 0.3s ease-in-out !important;
 }
 
-/* animations */
-
-/* Folder indicator on the tab group label */
-/* tab-group > .tab-group-label-container > label.tab-group-label::before {
-  content: '📁' !important;
-  font-size: 1em !important;
-  margin-right: 6px !important;
-  display: inline-block !important;
-  vertical-align: middle !important;
-  transition: transform 0.25s ease-in-out !important;
+body:has(zen-folder:hover){
+  zen-folder:hover{
+    background-color: light-dark(#fff3, #0003) !important;
+    box-shadow: #0003 0 0 10px 0 !important;
+  }
 }
 
-tab-group > .tab-group-label-container > label.tab-group-label[aria-expanded="true"]::before {
-  content: '📂' !important;
+/* zen-folder {
+  .tab-group-container > .tabbrowser-tab,.tab-group-container >  zen-folder{
+    background-color: var(--folder-bg-color-inactive) !important;
+  }
 }
  */
+
+
+/* ---------------------- */
+
+
+/* ---------------------- */
+
+/* zen-folder:has(tab[selected]) {
+  .tab-group-container > .tabbrowser-tab
+  ,.tab-group-container >  zen-folder
+  {
+    background-color: var(--folder-bg-color) !important;
+  }
+} */
+
+zen-folder{
+  transition: background-color 0.3s ease-in-out !important;
+}
+
+zen-folder[collapsed] [bursting][folder-active]{
+  border-radius:  var(--folder-corner-radius) !important
+}
+
+zen-folder[collapsed] zen-folder[hasactivetab]:not([bursting][folder-active]){
+  background-color: transparent !important;
+}
+
+
+.zen-workspace-tabs-section > zen-folder:has(tab[selected]) {
+  outline: var(--folder-border-width) dashed var(--folder-border-color) !important;
+  border-radius: var(--folder-corner-radius) !important;
+}
+
+
+zen-folder:has(tab[selected]) {
+    background-color: var(--folder-bg-color-inactive) !important;
+  border-radius: var(--folder-corner-radius) !important;
+}
+
+zen-folder {
+  & > .tab-group-container {
+    :root[zen-sidebar-expanded] & > * {
+      --zen-folder-indent: 9px !important;
+      margin-inline-start: var(--zen-folder-indent) !important;
+    }
+  }
+}
+
+.tabbrowser-tab[pending="true"] .tab-content{
+    filter: grayscale(1);
+    opacity: 0.5;
+}
