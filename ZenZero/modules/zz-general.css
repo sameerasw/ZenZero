@@ -246,6 +246,7 @@ tab[busy] {
 
 /* Context menu styling and hidden items */
 #tabContextMenu,
+#appMenu-mainView,
 #contentAreaContextMenu,
 #toolbar-context-menu {
   slot::before {
@@ -307,15 +308,16 @@ menuitem {
 
 [hasbeenopened="true"] {
   menuitem,
-  menu {
-    .menu-text {
+  menu,
+  toolbarbutton.subviewbutton{
+    .menu-text, .toolbarbutton-text {
       font-size: 0.93em !important;
       padding: 2px 5px !important;
       opacity: 1 !important;
       transition: all 0.2s ease-in-out !important;
     }
 
-    &:hover > .menu-text {
+    &:hover > .menu-text, &:hover > .toolbarbutton-text {
       padding-left: 8px !important;
       padding-right: 2px !important;
     }
