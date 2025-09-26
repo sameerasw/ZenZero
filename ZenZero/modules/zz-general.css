@@ -39,22 +39,6 @@ findbar * {
  * NEW TAB CUSTOMIZATION
  ******************************************************************************/
 
-/* Modify new tab entry appearance */
-[label="Super Speedy Dial"] {
-  .tab-label-container:after {
-    content: "Home" !important;
-  }
-
-  label {
-    display: none !important;
-  }
-
-  .tab-icon-image {
-    content: url("chrome://branding/content/icon32.png") !important;
-    border-radius: 100px !important;
-    mix-blend-mode: difference !important;
-  }
-}
 
 /* Empty tab styling - currently commented out */
 /* #browser:has([zen-has-empty-tab=""]) .deck-selected .browserStack {
@@ -192,11 +176,11 @@ body:not(
 }
 
 /* Hide extensions when not hovering sidebar bottom */
-#zen-sidebar-bottom-buttons:not(:hover) {
+/* #zen-sidebar-bottom-buttons:not(:hover) {
   .unified-extensions-item:not(:has([open])) {
     opacity: 0 !important;
   }
-}
+} */
 
 /*******************************************************************************
  * EXTENSIONS STYLING
@@ -230,14 +214,14 @@ tab[busy] {
 }
 
 /* Transparent URL bar styling */
-#urlbar[open][zen-floating-urlbar="true"] {
+/* #urlbar[open][zen-floating-urlbar="true"] {
   #urlbar-background {
     background-color: light-dark(
       color-mix(in srgb, #fdfdfd 80%, transparent),
       color-mix(in srgb, #0e0e0e 80%, transparent)
     ) !important;
   }
-}
+} */
 
 
 /*******************************************************************************

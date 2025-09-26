@@ -1,6 +1,6 @@
 
 /* Transparent glance styling */
-.zen-glance-background > vbox {
+/* .zen-glance-background > vbox {
   mask-image: linear-gradient(
     to right,
     black 0%,
@@ -20,4 +20,4 @@
   margin-bottom: 0.5% !important;
   height: 98% !important;
   border-radius: 1.5em !important;
-}
+} */

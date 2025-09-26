@@ -5,6 +5,10 @@
   --zen-settings-secondary-background: transparent !important;
 }
 
+#preferences-root{
+  background-color: transparent !important;
+}
+
 .KEYJUMP_hint{
   border-radius: 100px !important;
   background-color: #49FCBB !important;
@@ -17,6 +21,9 @@
 }
 
 @-moz-document url(about:config){
+  html, #toolbar{
+    background-color: transparent !important;
+  }
   tr, table{
     background-color: transparent !important;
     border: none !important;

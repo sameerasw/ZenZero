@@ -47,5 +47,5 @@ body:has(
     #ctrlTab-panel[hasbeenopened="true"] .ctrlTab-preview:not([hidden="true"])
   )
   #tabbrowser-tabpanels {
-  filter: blur(10px) !important;
+/*   filter: blur(10px) !important; */
 }
