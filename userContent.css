@@ -9,6 +9,10 @@
   background-color: transparent !important;
 }
 
+html:has([data-l10n-id]){
+  background-color: transparent !important;
+}
+
 .KEYJUMP_hint{
   border-radius: 100px !important;
   background-color: #49FCBB !important;
@@ -20,7 +24,7 @@
   transition: all 0.3s ease-in-out !important;
 }
 
-@-moz-document url(about:config){
+@-moz-document url(about:config), url(about:support){
   html, #toolbar{
     background-color: transparent !important;
   }
