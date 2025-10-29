@@ -7,45 +7,61 @@
 #ctrlTab-previews {
   border-radius: 2em !important;
   margin-bottom: 2em !important;
-  padding: 1.5em !important;
+  padding: 1em 0em 0 0em !important;
 
-  box-shadow: rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
-    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
-    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
-    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px !important;
-  background-color: light-dark(#fff8, #0005) !important;
+    border: 1px solid light-dark(#ffff, #fff5);
+    box-shadow:   4px 2px 20px light-dark(#0005, #0001), inset 0 2px 4px light-dark(#ffff, #fff3);
+  background-color: light-dark(#fff8, #0008) !important;
+}
+
+.ctrlTab-preview-inner{
+  border-radius: 1.8em !important;
+  &:hover, &:focus, &:active, &:focus-visible, &:target, &:focus-within{
+  background-color: light-dark(#ddd, #222) !important;
+/*     border: none !important; */
+  }
 }
 
 /* Preview image styling */
-.ctrlTab-canvas img {
+.ctrlTab-canvas {
   border-radius: 1em !important;
+  overflow: hidden !important;
   transition: all 0.5s ease-in-out !important;
-
-  &:hover,
-  &:active,
-  &:focus {
-    scale: 1.05 !important;
-  }
 }
 
-#ctrlTab-preview:active,
-#ctrlTab-preview:focus {
-  .ctrlTab-canvas img {
-    scale: 1.05 !important;
-  }
+.ctrlTab-preview:hover, .ctrlTab-preview:active, .ctrlTab-preview:focus{
+    scale: 1.02 !important;
 }
 
 /* Panel background and blur effect */
 #ctrlTab-panel {
   background-color: transparent !important;
+  box-shadow: none !important;
+  background: none !important;
   --panel-background: transparent !important;
   --zen-appcontent-border: none !important;
   border: none !important;
 }
 
+label.ctrlTab-label::before{
+  color:  light-dark(#000, #fff) !important;
+  background-color: light-dark(#fff, #000) !important;
+  padding: 7px !important;
+  border-radius: 1em;
+  
+}
+
 body:has(
-    #ctrlTab-panel[hasbeenopened="true"] .ctrlTab-preview:not([hidden="true"])
+    #ctrlTab-panel[hasbeenopened="true"] .ctrlTab-preview:not([hidden=""])
   )
   #tabbrowser-tabpanels {
-/*   filter: blur(10px) !important; */
+  filter: blur(10px) !important;
+}
+
+.ctrlTab-favicon{
+  margin: auto !important;
+  margin-top: -95px !important;
+  scale: 1.5 !important;
+  border-radius: 1em !important;
+  background-color: light-dark(#ddd, #222) !important;
 }
