@@ -110,3 +110,8 @@ footer{
   border: none !important;
   box-shadow: none !important;
 } */
+
+
+body:has(#viewer.pdfViewer){
+  background-color: transparent !important;
+}
