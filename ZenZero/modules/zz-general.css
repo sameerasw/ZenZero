@@ -116,12 +116,12 @@ html:not([lwt-sidebar="dark"]) {
 }
 
 /* No border split view handle fix */
-.zen-view-splitter-header {
+/* .zen-view-splitter-header {
   transition: margin 0.3s ease-in-out;
   &:hover {
     margin-top: 15px !important;
   }
-}
+} */
 
 /* Sidebar bottom button positioning */
 #zen-sidebar-bottom-buttons {
