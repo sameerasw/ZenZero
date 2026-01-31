@@ -44,7 +44,7 @@ html:has([data-l10n-id]){
 
 groupbox{
 /*   background: var(--zen-colors-tertiary) !important; */
-  background: var(--zen-colors-border-contrast) !important;
+/*   background: var(--zen-colors-border-contrast) !important; */
   border: none;
 }
 
@@ -112,6 +112,6 @@ footer{
 } */
 
 
-body:has(#viewer.pdfViewer){
+body:has(#viewer.pdfViewer, #json-scrolling-panel){
   background-color: transparent !important;
 }
