@@ -246,6 +246,7 @@ tab[busy] {
   #context_sendTabToDevice,
 /*   #context_reopenInContainer, */
   #context_selectAllTabs,
+  #context_moveTabToGroup,
   #context_closeDuplicateTabs,
   #context_closeTabOptions,
   #context_undoCloseTab,
