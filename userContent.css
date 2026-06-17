@@ -5,7 +5,7 @@
   --zen-settings-secondary-background: transparent !important;
 }
 
-#preferences-root{
+#preferences-root, #search-container{
   background-color: transparent !important;
 }
 

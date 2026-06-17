@@ -47,3 +47,12 @@
     border-radius: 2em !important;
   }
 }
+
+.devtools-toolbox-bottom-iframe{
+/*   margin: 10px !important; */
+  border-radius: 1.25em !important;
+}
+
+.devtools-horizontal-splitter{
+  display: none !important;
+}
